@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Confession</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Intro Section -->
+    <section id="intro">
+      <h1>Collins Confession</h1>
+      <div class="inputGroup">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+      </div>
+      <div class="inputGroup">
+        <label>Department:</label>
+        <input type="text" id="dept" placeholder="Your Department">
+      </div>
+      <div class="inputGroup">
+        <label>Hobby:</label>
+        <input type="text" id="hobby" placeholder="Your Hobby">
+      </div>
+      <button id="startBtn" class="btn start">Start</button>
+    </section>
+
+    <!-- Question Section -->
+    <section id="questionSection" class="hidden">
+      <h2 id="question"></h2>
+      <div class="btnGroup">
+        <button id="yesBtn" class="btn yes">Yes</button>
+        <button id="noBtn" class="btn no">No</button>
+      </div>
+      <button id="backToIntro" class="btn ghost">Back</button>
+    </section>
+
+    <!-- Result Section -->
+    <section id="resultSection" class="hidden">
+      <div id="visualBox"></div>
+
+      <!-- Rejection -->
+      <div id="reasonWrapper" class="hidden">
+        <label for="reason">Why did you reject?</label>
+        <textarea id="reason" placeholder="Type your reason..."></textarea>
+        <div class="row">
+          <button class="btn ghost" id="restartBtn">Restart</button>
+          <button class="btn send" id="sendBtn">Send</button>
+        </div>
+      </div>
+
+      <!-- Acceptance -->
+      <div id="acceptReasonWrapper" class="hidden">
+        <label for="acceptReason">Why did you accept?</label>
+        <textarea id="acceptReason" placeholder="Type your reason..."></textarea>
+        <div class="row">
+          <button class="btn ghost" id="acceptRestartBtn">Restart</button>
+          <button class="btn send" id="acceptSendBtn">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio -->
+    <audio id="loveAudio" src="love.mp3.mp3" preload="auto"></audio>
+    <audio id="heartbreakAudio" src="heartbreak.mp3.mp3" preload="auto"></audio>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
